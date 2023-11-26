@@ -1,6 +1,8 @@
 # Aplicação React de Gerenciamento de Projetos e Tarefas
 
 Projeto criado com as bibliotecas React JS e Material UI.
+exercícios para a faculdade na matéria:
+pratica integradora para tecnologias disruptivas
 
 ## Passo-a-passo para execução
 

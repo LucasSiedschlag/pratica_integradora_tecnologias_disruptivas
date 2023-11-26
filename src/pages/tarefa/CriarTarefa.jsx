@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
+// import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
 
 //Declaração do componente CriarTarefa, recebendo como props, do Componente ListarTarefa, os states handClose, tarefas e setTarefas
@@ -23,7 +23,7 @@ const CriarTarefa = ({handleClose, tarefas, setTarefas}) =>{
     //Abaixo uma variável é declarada para armazenar o id da tarefa, somando 1 ao maior id existente atualmente no state Tarefas
     let proximoId = Math.max(...tarefas.map(tarefa => tarefa.idTarefa)) + 1;
     setIdTarefa(proximoId);
-  },[]);
+  },[ tarefas ]);
 
   const handleRecurso = (event) => {
     setRecursoTarefa(event.target.value);
@@ -119,6 +119,10 @@ const CriarTarefa = ({handleClose, tarefas, setTarefas}) =>{
                   <MenuItem value={'Recurso 1'}>Recurso 1</MenuItem>
                   <MenuItem value={'Recurso 2'}>Recurso 2</MenuItem>
                   <MenuItem value={'Recurso 3'}>Recurso 3</MenuItem>
+                  <MenuItem value={'Recurso 4'}>Recurso 4</MenuItem>
+                  <MenuItem value={'Recurso 5'}>Recurso 5</MenuItem>
+                  <MenuItem value={'Recurso 6'}>Recurso 6</MenuItem>
+                  <MenuItem value={'Recurso 7'}>Recurso 7</MenuItem>
                 </Select>
               </FormControl>
             </Grid>
